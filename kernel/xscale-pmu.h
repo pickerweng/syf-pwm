@@ -161,7 +161,7 @@ int pmu_release(int);						/* Release PMU */
 *       value - Value to write to PMU register
 *
 * 	Author: 	Caesar Chen 2007/11/14
-*	Modified: 	Tony Weng	2009
+*	Modified: 	Picker Weng	2009
 */
 
 inline void pmu_reg_write(counter_t count_type, u32 _value)
@@ -226,7 +226,7 @@ inline void pmu_reg_write(counter_t count_type, u32 _value)
 *		8 -> EVTSEL	PMU Event Select Register
 *
 * 	Author: 	Caesar Chen 2007/11/14
-*	Modified:	Tony Weng	2009
+*	Modified:	Picker Weng	2009
 */
 inline u32 pmu_reg_read(counter_t count_type)
 {

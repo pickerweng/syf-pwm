@@ -1,7 +1,7 @@
 /*
  *  syf_pwm.c
  *
- *  Copyright (C)  2009 Tony Weng <neutron_nebular@hotmail.com>
+ *  Copyright (C)  2009 Picker Weng <pickerweng@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -62,7 +62,7 @@ static dev_t syf_pwm_dev_num;
 #define DEVICE_NAME	"syf-pwm"
 
 /*
- * Tony:
+ * Picker:
  *	This function is used to start or to end the governor.
  *	When you design your governor, you can added the function below here,
  *	and then you have to added your entry point in this function.
@@ -84,7 +84,7 @@ __syf_pwm_cpufreq_governor(struct cpufreq_policy *policy,
 			break;
 
 		/*
-		 * Tony:
+		 * Picker:
 		 *	Call your governor at here.
 		 *	Important: You may have a mutex lock for calling your governor.
 		 */
@@ -247,5 +247,5 @@ syf_pwm_cleanup(void)
 module_init(syf_pwm_init);
 module_exit(syf_pwm_cleanup);
 
-MODULE_AUTHOR("Tony Weng");
+MODULE_AUTHOR("Picker Weng");
 MODULE_LICENSE("GPL");
